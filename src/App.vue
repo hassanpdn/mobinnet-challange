@@ -10,9 +10,9 @@
 
 <script>
 // Components:
-import Toggler from "@/components/common/switch/switch";
-import CloudPackageGroup from "@/components/cards/CloudPackageGroup/CloudPackageGroup";
-import Overlay from "@/components/common/overlay/overlay";
+import Toggler from "@/components/shared/Switch/switch";
+import CloudPackageGroup from "@/components/feature/CloudPackageGroup/CloudPackageGroup";
+import Overlay from "@/components/shared/Overlay/overlay";
 
 //Utils:
 import { defaultOptions as options } from "@/api/defaultOptions";

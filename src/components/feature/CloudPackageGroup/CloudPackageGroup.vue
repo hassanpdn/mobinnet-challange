@@ -41,8 +41,8 @@
 <script>
 //Components
 import Details from '../Details';
-import SelectBox from '@/components/common/select/select';
-import Btn from '@/components/common/button/btn';
+import SelectBox from '@/components/shared/Select/select';
+import Btn from '@/components/shared/Button/btn';
 
 export default {
       components: {
