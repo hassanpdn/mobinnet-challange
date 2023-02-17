@@ -1,0 +1,24 @@
+@import "theme-colors";
+@import "fonts";
+
+html,
+body {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: 'Shabnam';
+}
+
+body {
+      position: relative;
+}
+
+.app-background {
+      background-color: var(--app-background-color);
+      transition: all .3s;
+}
+
+ul, li, p {
+      margin: 0;
+      padding: 0;
+}

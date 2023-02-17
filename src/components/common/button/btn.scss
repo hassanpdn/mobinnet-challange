@@ -1,0 +1,28 @@
+%btn-base {
+      position: relative;
+      font-family: Shabnam;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      padding: 12px;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px -5px #00ad4c40;
+      cursor: pointer;
+      border: none;
+      margin-top: 15px;
+      width: 100%;
+      background: linear-gradient(-90deg, #00ad4c 0%, #73bf43 100%);
+}
+
+.btn {
+      @extend %btn-base;
+
+      .btn-icon {
+            width: 33px;
+            height: 33px;
+            position: absolute;
+            right: -4px;
+            top: -5px;
+            margin: 10px;
+      }
+}

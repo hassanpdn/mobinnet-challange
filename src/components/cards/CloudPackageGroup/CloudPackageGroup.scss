@@ -1,0 +1,161 @@
+.packages-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 23px 29px;
+
+      @media screen and (min-width: 1392px) and (max-width: 1450px) {
+            margin: 23px 21px;
+            flex: 0 1 16.6%;
+      }
+
+      @media screen and (min-width: 1200px) {
+            flex: 0 1 18.6%;
+            margin: 23px 0px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+            flex: 0 1 41.6%;
+      }
+
+      @media screen and (min-width: 540px) and (max-width: 768px) {
+            flex: 0 1 39.6%;
+            margin: 23px 25px;
+      }
+      @media screen and (min-width: 460px) and (max-width: 540px) {
+            flex: 0 1 47.6%;
+            margin: 23px 3px;
+      }
+
+      @media screen and (max-width: 460px) {
+            flex: 0 1 96.66%;
+            margin: 0;
+      }
+
+      .selected-item {
+            border: 2px solid var(--selected-box-border-color) !important;
+            border-radius: 15px !important;
+            box-shadow: 0 0 20px var(--selected-box-border-color);
+
+            &:after {
+                  content: "";
+                  background-size: contain;
+                  background: url("../../../assets/icons/svg/selected-checkbox.svg") no-repeat center;
+                  position: absolute;
+                  width: 48px;
+                  height: 48px;
+                  top: 0;
+                  left: 0;
+            }
+      }
+
+      .package {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            border-radius: 10px;
+            margin: 5px;
+            margin-bottom: 30px;
+            padding: 15px;
+            line-height: 2;
+            box-shadow: 0 0 20px #7d91b34d;
+            background: var(--card-background-color);
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            border: 2px solid transparent;
+
+
+            .icon {
+                  position: relative;
+                  width: 150px;
+                  height: 150px;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+            }
+
+            .discount-badge {
+                  position: absolute;
+                  top: -4px;
+                  right: 8px;
+
+                  .badge {
+                        width: 41px;
+                        height: 41px;
+                  }
+
+                  .percent {
+                        width: 10px;
+                        height: 10px;
+                  }
+
+                  span {
+                        position: absolute;
+                        top: 6px;
+                        left: 6px;
+                        color: #fff;
+                  }
+            }
+
+            .title {
+                  font: "Shabnam" 18px bold;
+                  color: var(--title-color);
+            }
+
+            
+            .price {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  margin-top: 5px;
+                  
+                  @media screen and (min-width: 1200px) and (max-width: 1250px) {
+                        margin-top: 15px;
+                  }
+
+                  .amount {
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: var(--primary-color);
+                        position: relative;
+
+                        @media screen and (min-width: 460px) and (max-width: 540px) {
+                              font-size: 20px;
+                        }
+                        
+                        @media screen and (min-width: 1200px) and (max-width: 1250px) {
+                              font-size: 18px;
+                        }
+                        
+                        .old-price {
+                              position: absolute;
+                              text-decoration-line: line-through;
+                              font-size: 17px;
+                              right: 0px;
+                              bottom: 28px;
+                              color: var(--light-red-color);
+
+                              @media screen and (min-width: 1200px) and (max-width: 1250px) {
+                                    font-size: 13px;
+                              }
+
+                              @media screen and (min-width: 460px) and (max-width: 540px) {
+                                    font-size: 13px;
+                              }
+                        }
+                  }
+
+                  .subtitle {
+                        font-size: 11px;
+                        color: var(--secondary-color);
+                  }
+            }
+
+            .package-details {
+                  width: 100%;
+            }
+      }
+}

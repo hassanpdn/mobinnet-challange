@@ -1,0 +1,54 @@
+.selectdiv {
+      position: relative;
+      margin-top: 15px;
+      font-family: Shabnam;
+      
+      &:after {
+            content: "";
+            color: #0ebeff;
+            right: 11px;
+            left: 6px;
+            width: 20px;
+            height: 34px;
+            padding: 15px 0px 0px 8px;
+            position: absolute;
+            pointer-events: none;
+      }
+      
+      select {
+            direction: rtl;
+            cursor: pointer;
+            appearance: none;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 24px;
+            line-height: 1.75;
+            color: var(--primary-color);
+            background-color: var(--select-box-bg-color);
+            font-size: 16px;
+            font-family: Shabnam;
+            font-weight: bold;
+
+            option {
+                  padding: 10px;
+                  border-bottom: 1px solid #0ebeff;
+            }
+      }
+}
+
+.opened {
+      &:after {
+            background-size: contain;
+            background: url("../../../assets/icons/svg/opened-dropdown.svg") no-repeat center;
+            transition: all .3s;
+      }
+}
+
+.closed {
+      &:after {
+            background-size: contain;
+            background: url("../../../assets/icons/svg/closed-dropdown.svg") no-repeat center;
+            transition: all .3s;
+      }
+}
